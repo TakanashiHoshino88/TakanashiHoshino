@@ -34,6 +34,6 @@ jobs:
           name: Release (PBRP)
           tag_name: 'latest'
           body: |
-            File uploaded from URL: ${{ inputs.FILE_URL }}
+            File uploaded from URL Success!
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
