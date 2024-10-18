@@ -1,14 +1,11 @@
 name: Create Release
 
 on:
-  push:
-    branches:
-      - main
-
-inputs:
-  FILE_URL:
-    description: 'URL of the file to download'
-    required: true
+  workflow_dispatch:
+    inputs:
+      FILE_URL:
+      description: 'URL of the file to download'
+      required: true
 
 jobs:
   create-release:
